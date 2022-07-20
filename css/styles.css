@@ -1,0 +1,67 @@
+/* основной текст #757575; */
+/* вторичный текст #212121; */
+/* акцент #2196F3; */
+/* белый текст шрифта #ffffff */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text-color: #2196F3;
+    --white-text-color: #ffffff;
+    --hero-background-color: #2F303A;
+    --footer-adress-text-color-alfa: rgba(255, 255, 255, 0.6);
+    
+}
+
+body {
+   color:  var(--primary-text-color);
+}
+.logo {
+    color: var(--accent-text-color);
+        list-style-type: none;
+}
+.header-links a {
+    color: #212121;
+        list-style-type: none;
+    
+}
+.header-links a:hover,
+.header-links a:focus {
+    color: var(--accent-text-color);
+}
+h1,h2,h3 {
+    color: var(--title-text-color);
+}
+.main-link {
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+}
+.hero { 
+    color: var(--white-text-color);
+    background-color: var(--hero-background-color);
+}
+.adress-info {
+    color: var(--footer-adress-text-color-alfa);
+
+}
+.aress {
+    color: var(--white-text-color);
+}
+.project-filter {
+    color: var(--title-text-color);
+    border: 0;
+}
+.project-filter:hover,
+.project-filter:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.project-filter-container {
+    list-style-type: none;
+}
+.list   {
+        list-style-type: none;
+}
+.text-decoration {
+    text-decoration: none;
+}
