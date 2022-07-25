@@ -32,14 +32,13 @@ body {
     color: var(--accent-text-color);
         list-style-type: none;
 }
-.header-links a {
-    color: var(--title-text-color);
+.header-links  {
+    color: var(--primary-text-color);
     list-style-type: none;
     font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-    
 }
 .header-contacts {
     color: var(--primary-text-color);
@@ -48,30 +47,35 @@ body {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
+        text-decoration: none;
 }
 .header-links a:hover,
 .header-links a:focus {
     color: var(--accent-text-color);
 }
-h1,h2,h3 {
+.current-page  {
+    color: var(--accent-text-color);
+    text-decoration: none;
+    list-style-type: none;
+}
+.title{
     color: var(--title-text-color);
 }
-.hero,
-.hero-text {
+.hero {
     background-color: var(--background-color);
-    color: var(--white-text-color);
     text-align: center;
+}
+.hero-text {
+    color: var(--white-text-color);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-
 }
 .main-link {
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
-
 }
 .button-font {
     font-family: inherit;
@@ -82,14 +86,6 @@ h1,h2,h3 {
     text-align: center;
     letter-spacing: 0.06em;
 }
-.filter-button-font {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
 .project-name {
     font-weight: 700;
     font-size: 18px;
@@ -97,35 +93,24 @@ h1,h2,h3 {
     letter-spacing: 0.06em;
 }
 .project-category {
-    color: var(--primary-text-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
-
 }
 .benefits{
     text-transform: uppercase;
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 .benefits-descr {
-    color: var(--primary-text-color);
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 .section-article {
-
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em;
 }
  .list-content {
     display: flex;
@@ -141,21 +126,26 @@ h1,h2,h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
 }
 .team-spec {
-    color: var(--primary-text-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
 }
-.aress {
+.adress {
     color: var(--white-text-color);
 }
 .project-filter {
     color: var(--title-text-color);
-    border: 0;
+    background-color: var(--filter-backfround-color);
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
 }
 .project-filter:hover,
 .project-filter:focus {
@@ -165,12 +155,11 @@ h1,h2,h3 {
 }
 .project-filter-container {
     list-style-type: none;
-    background-color: var(--filter-backfround-color);
+    list-style-type: none;
 }
 .list   {
         text-decoration: none;
         list-style-type: none;
-
 }
 .text-decoration {
     text-decoration: none;
@@ -184,11 +173,11 @@ h1,h2,h3 {
         line-height: 1.2;
         letter-spacing: 0.03em;
 }
-
 .footer {
-
     background-color: var(--background-color);
-
+}
+.adress-font {
+    font-style: normal;
 }
 .adress-info {
     color: var(--footer-adress-text-color-alfa);
@@ -196,8 +185,23 @@ h1,h2,h3 {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
+}
+.adress-info:hover,
+.adress-info:focus{
+ color: var(--accent-text-color);
 }
 .logo-footer {
     color: var(--white-text-color);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: none;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
